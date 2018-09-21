@@ -1,0 +1,96 @@
+/*this will be the general layout from page to page*/
+
+/****************General styling for the entire body****************/
+body{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(248, 248, 248);
+    /*Increase Visibility for white font on lighter backgrounds*/
+    text-shadow: 0px 0px 10px black;
+}
+
+/****************Styling for header section****************/
+header{
+    background-color: rgba(26, 39, 54, 0.253);
+    text-align: center;
+    padding: 2vh;
+    margin: 0;
+}
+
+#title{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+}
+
+.nav-bar{
+    letter-spacing: 1px; /*added affect for nav-bar text*/
+}
+
+/*Styling for links in nav-bar*/
+a{
+    color: rgb(240, 255, 255);
+    text-decoration-line: none;
+}
+
+a:hover{
+    color: rgb(255, 215, 0);
+}
+
+a:active{
+    color: rgb(95, 0, 95);
+}
+
+/****************Main Section Styling for each Page. Helps for a consistent look****************/
+.main-body{
+    width: 80%;
+    height: 90%;   /*stretched the main body to the entire page for larger pages*/
+    min-height: 850px;  /*minimum height of the window no matter how little content is the page*/
+    margin: auto;   /* automatically re-adjusts the margins after setting a smaller width*/ 
+    padding: 0 2vh 0 2vh;
+    border-right: 2px groove rgb(169, 169, 169);
+    border-left: 2px groove rgb(169, 169, 169);
+
+    /*Flexbox for organizing content within container
+    Spreads out the content vertically*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+p{
+    margin: 2vh;
+    padding: 1vh;
+}
+
+/****************Uniform footer with my trademark on each page****************/
+footer{
+    text-align: center;
+    margin: 0;
+    padding: 1vh;
+    background-color: rgba(26, 39, 54, 0.253);
+}
+
+/*****************Responsive text sizing for smaller screens for 675px width and narrower*****************/
+@media only screen and (max-width: 675px){
+
+    /*Reduce the general font size for smaller width screens*/
+    body{
+        font-size: 14px;
+    }
+
+    #title{
+        font-size: 40px;
+    }
+
+}
+
+/***for smaller screens (a little larger than standard phone screen)***/
+@media only screen and (max-width: 425px){
+    /*stacks the links in nav vertically for very narrow screens*/
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}

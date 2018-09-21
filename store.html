@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Health and Wellness Kiosk online store, providing equipment and supplments"> <!--meta for each page is different, depending on which topic I am trying to attract users to-->
+        <meta name="keywords" content="fitness, health, athletics, equipments, supplements">
+        <title>Athletic Health Kiosk</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <style>
+            /*****Individual Styling Per Page Done Here*****/
+            /*background image*/
+            body{
+                background: url("http://mspit.ru/image/cache/data/journal2/bg-1920x1080.jpg");
+                background-repeat: no-repeat;
+                background-size:cover; /*dynamic sizing, will always cover the entire page. Also stays within ratio*/
+            }
+
+            .sub-section{
+                display: flex;
+                flex-direction: row; /*place items within sub-section horizontally*/
+                text-align: center; /*centers text above and below each item*/
+            }
+
+            img{
+                /*frame for each image*/
+                max-height:200px;            
+                border: 3px rgb(85, 107, 47) solid;
+                box-shadow: 4px 2px rgba(85, 107, 47, 0.486);
+            }
+
+            /*Center my subscription box*/
+            form{
+                margin:auto;
+            }
+            
+            /*individual look for button*/
+            button{
+                background-color: goldenrod;
+                border: 0px;
+                width: 120px;
+                height: 20px;
+                font-weight: 700;
+            
+            }
+
+            /*responsive design for smaller screens*/
+            @media only screen and (max-width: 1550px){
+                /*will change orgnization of items inside main body to stack vertically*/
+                .sub-section{
+                    flex-wrap: wrap;    /*wraps around container, creating another row in the container when the screen gets too narrow*/
+                    justify-content: center;    /*centers the items towards the middle of the screen for a better look*/
+                }
+            }
+            
+            
+            @media only screen and (max-width: 625px){
+                /*stacks content within form vertically*/
+                form{
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                /*to center my button when it's aligned vertically with other form content*/
+                button{
+                    margin:auto;
+                }
+            }
+
+        </style>
+        <script>
+            function submitMessage() {
+                alert("Thank you for signing up! You'll receive great offers weekly!");    
+            }
+        </script>
+    </head>
+    <body>
+
+        <!--header will be the same from page to page-->
+        <header id="top"> <!--top id to anchor link in footer to top-->
+            <h1 id="title">
+                Health and Wellness Kiosk
+            </h1>
+
+            <!--navigation bar:
+            This will lead visitors to other sections of my page.-->
+            <div class="nav-bar">
+                <nav>
+                    <a href="index.html">Home</a> &nbsp;
+                    <a href="performance.html">Exercise</a> &nbsp;
+                    <a href="nutrients.html">Nutrition and Supplements</a> &nbsp;
+                    <a href="store.html">Store</a> &nbsp;
+                    <a href="resources.html">Resources</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--This will be the main difference between pages-->
+        <main class="main-body">
+            <h2 class="article-title">Store</h2>
+            <div class="sub-section">
+                <h3 class="sub-title">Equipment</h3>
+                
+                <figure>
+                    <h4>Coming Soon</h4>
+                    <!--Title of each image is not available, so when user hovers of image, they will notified product is not available. There also is alt attribute
+                    in each image in case they do not load on the user's browser.-->
+                    <img src="https://www.titan.fitness/media/catalog/product/cache/8/thumbnail/1000x1000/9df78eab33525d08d6e5fb8d27136e95/h/e/hexdbb_95-1_1_.jpg" 
+                    alt="An image of two dumbells next to each other" title="Not Available">
+                    <figcaption>Monster Dumbells</figcaption>
+                </figure>
+                
+                <figure>
+                    <h4>Coming Soon</h4>
+                    <img src="http://wildworkoutsandwellness.com/wp-content/uploads/2018/01/kettlebells.jpg" alt="An image of a collection of different kettlebells"
+                    title="Not Available">
+                    <figcaption>Warrior Kettlebells</figcaption>
+                </figure>
+               
+                <figure>
+                    <h4>Coming Soon</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWmM4cw4ViNbcTH3yf2h8IYFU0fpKfiZSFpMuW20MKxbl90dQmEg" alt="An image of black battle ropes coiled up"
+                    title="Not Available">
+                    <figcaption>Ultimate Battle Ropes</figcaption>
+                </figure>
+                
+                <figure>
+                    <h4>Coming Soon</h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUP_rgZkKFf6tFrYVeRiVHuAlppNjG-7NFB6En0QhwQ13eM5w6Q" alt="An image of a jump rope"
+                    title="Not Available">
+                    <figcaption>Velocity Jump Ropes</figcaption>
+                </figure>
+            </div>
+            <div class="sub-section">
+                <h3 class="sub-title">Supplements</h3>
+                
+                <figure>
+                    <h4>Coming Soon</h4>
+                    <img src="http://nootropicgeek.com/wp-content/uploads/2016/11/B12-nootropic.jpg" alt="An image of Vitamin B-12 capsule" title="Not Available" width="200">
+                    <figcaption>Vitamin B-12 Extract</figcaption>
+                </figure>
+                
+                <figure>
+                    <h4>Coming Soon</h4>
+                    <img src="https://www.healthaid.co.uk/image/cache/catalog/thumbs/0001358_ginger-extract-550mg-60s-tablets-700x700.jpeg" alt="An image of ginger extra pill bottle"
+                    title="Not Available">
+                    <figcaption>Ginger Extract Capsules</figcaption>
+                </figure>
+                
+                <figure>
+                    <h4>Coming Soon</h4>
+                    <img src="data:image/jpeg;base64,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" 
+                    alt="An image of turmeric extract pill bottle" title="Not Available">
+                    <figcaption>Turmeric Extract Capsules</figcaption>
+                </figure>
+            </div>
+
+            <form enctype="text/plain" method="get" action="mailto:phamj93&commat;gmail&period;com" id="email-submission">
+                <!--Label for describing input which takes an email answer-->
+                <label for="email">Sign up for our latest offers! </label><input type="email" name="Email" id="email" placeholder="johnsmith@mail.com" required> 
+                <!--button for submitting form-->
+                <button type="submit" onclick="submitMessage()">Subscribe</button>
+            </form>
+        </main>
+
+        <!--header will be the same from page to page-->
+        <footer>
+            Made by James Pham &TRADE; <br>
+            <!--Link that takes you back to the top of the same page-->
+            <a href="#top" style="font-size: 12px">Back to the Top</a>
+        </footer>
+
+    </body>
+</html>

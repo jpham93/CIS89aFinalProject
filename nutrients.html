@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Informational about diet and supplements"> 
+        <meta name="keywords" content="health, food, diet, nutrition, supplements, essentials"> <!--meta for each page is different, depending on which topic I am trying to attract users to-->
+        <title>Athletic Health Kiosk</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <style>
+            /*****Individual Styling Per Page Done Here*****/
+            /*background image*/
+            body{
+                background: url("https://i.ytimg.com/vi/ndTF5gXjRkc/maxresdefault.jpg");
+                background-repeat: no-repeat;
+                background-size:cover; /*dynamic sizing, will always cover the entire page. Also stays within ratio*/
+            }
+
+            /*Image styling*/
+            img{
+                max-height: 100px;
+                /*frame for each image*/
+                border: 3px solid white;
+                border-radius: 50%; /*rounds our the edges of the border giving images an oval frame*/
+                
+                /*allows image to float to the left of container*/
+                float:left;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--header will be the same from page to page-->
+        <header id="top"> <!--top id to anchor link in footer to top-->
+            <h1 id="title">
+                Health and Wellness Kiosk
+            </h1>
+
+            <!--navigation bar:
+            This will lead visitors to other sections of my page.-->
+            <div class="nav-bar">
+                <nav>
+                    <a href="index.html">Home</a> &nbsp;
+                    <a href="performance.html">Exercise</a> &nbsp;
+                    <a href="nutrients.html">Nutrition and Supplements</a> &nbsp;
+                    <a href="store.html">Store</a> &nbsp;
+                    <a href="resources.html">Resources</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--This will be the main difference between pages-->
+        <main class="main-body">
+            <h2 class="article-title">Nutrition and Supplments</h2>
+            <article>
+                <h3>Overview</h3>
+                <p>
+                   Exercise alone is not enough to maximize longevity. Like peanut butter is to jam, exercise is a complement to your dietary
+                   choices. By paying attention to both diet and exercise, one can achieve ultimate balance in health and wellness.
+                   Although there are a lot of different diet variations, your choices are dependent on your own individual needs. 
+                </p>
+            </article>
+
+            <div class="sub-section">
+                <h3 class="sub-title">Macronutrients</h3>
+                <p>
+                    We won't be going over too much about macronutrients (protein, fats, and carbohydrates) as people vary
+                    a lot in this area of nutrition. Some people need more protein. Others need to be wary of certain types of 
+                    fats or carbohydrates if they are prone to disease. The general rule is avoid processed foods, and eat everything
+                    homemade as much as possible
+                </p>
+            </div>
+
+            <div class="sub-section">
+                <h3 class="sub-title">Micronutrients and Other Supplements</h3>
+                <p>
+                    Micronutrients considers the less essential (although still very important) nutrients. Our micronutrient consumption
+                    is usually satisfied by our normal food. However, We'll go over some micronutrients that I find would be a delightful discovery for our audience.
+                </p>
+
+                <p>
+                    <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/eggs_slideshow/getty_photo_of_eggs_in_carton.jpg" 
+                    alt="An image of a carton of 6 eggs">
+                    <b>Vitamin B-12</b> - Recently, there has been a large advertisement value for food and supplement goods with Vitamin B-12.
+                    Vitamin B-12 is responsible for healthy nerve and blood cells. A lack of Vitamin B-12 causes fatigue, breathlessness, and other
+                    negative symptoms. You can find Vitamin B-12 in eggs, meat, dairy, or in supplmental forms like Vitamin B complex or Vitamin 
+                    B-12 extracts.
+                <p>
+                    <img src="https://img.aws.livestrongcdn.com/ls-article-image-673/ds-photo/getty/article/156/244/151018123.jpg" alt="An image of a whole, sliced, and minced ginger all together">
+                    <b>Ginger</b> - Although not high in vitamins and minerals, ginger has a unique property that reduces inflammation in the body.
+                    Many people use it as a home ready for stomach aches, nausea, and soreness. 
+                </p>
+            
+                <p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqj7cwzR15wPM_6_usb0M0_V1E8DWjZfMuC6Qu5sVB2oHJCvxFg" alt="An image of ground up tumeric">
+                    <b>Curcumin</b> - Found in turmeric and used in many rich cooking, curcumin packs a denser nutrition label than ginger. It also
+                    contains powerful anti-inflammatory components and is also a strong antioxidant. A serving of turmeric also contains a decent amount 
+                    of other vitamins and minerals including iron and potassium, so if you plan to get curcumin through turmeric, you'll be receiving
+                    a nice deal! 
+                </p>
+
+            </div>
+        </main>
+
+        <!--header will be the same from page to page-->
+        <footer>
+            Made by James Pham &TRADE; <br>
+            <!--Link that takes you back to the top of the same page-->
+            <a href="#top" style="font-size: 12px">Back to the Top</a>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="External resources for fitness, health, and diet on the web">
+        <meta name="keywords" content="fitness, health, athletics, diet, nutrition, supplements, links, research, information"> <!--meta for each page is different, depending on which topic I am trying to attract users to-->
+        <title>Athletic Health Kiosk</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <style>
+            /*****Individual Styling Per Page Done Here*****/
+            /*background image*/
+            body{
+                /*plain background, nothing fancy*/
+                background-color: rgb(221, 221, 221);
+            }
+
+            /*the content for this page will be line towards the top of the main body*/
+            .main-body{
+                color: black;
+                text-shadow: 0px 0px 0px; /*Remove text shadow*. Not neccessary in this page*/
+                justify-content: flex-start; /*aligns flex container, which is the main-body class, to line items vertically starting from the top.*/
+            }
+
+            /*Hyperlinks within the main body will be blue, different from nav-bar link colors*/
+            td>a{
+                color: blue;
+            }
+
+            td{
+                text-align: center;
+            }
+
+            /*reduce the spacing of the lone p in this page*/
+            p{
+                margin: 0;
+                padding: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!--header will be the same from page to page-->
+        <header id="top"> <!--top id to anchor link in footer to top-->
+            <h1 id="title">
+                Health and Wellness Kiosk
+            </h1>
+
+            <!--navigation bar:
+            This will lead visitors to other sections of my page.-->
+            <div class="nav-bar">
+                <nav>
+                    <a href="index.html">Home</a> &nbsp;
+                    <a href="performance.html">Exercise</a> &nbsp;
+                    <a href="nutrients.html">Nutrition and Supplements</a> &nbsp;
+                    <a href="store.html">Store</a> &nbsp;
+                    <a href="resources.html">Resources</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--This will be the main difference between pages-->
+        <main class="main-body">
+            <h2 class="article-title">Additional Resources</h2>
+            <!--I used a table for oganizing links-->
+            <table>
+                <tr>
+                    <th>Here are a few links for more information about exercise and nutrition.</th>
+                </tr>                    
+                <tr>
+                    <td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3951958/" target="_blank">The Influence of Exercise on Cognitive Abilities</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.health.harvard.edu/blog/regular-exercise-changes-brain-improve-memory-thinking-skills-201404097110" target="_blank">Regular
+                    Exercise Changes the Brain to Improve Memory, Thinking Skills</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1742726/" target="_blank">Osteoporosis and Exercise</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise-and-chronic-disease/art-20046049" target="_blank">Exercise and Chronic Disease: Get the Facts</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://sphweb.bumc.bu.edu/otlt/MPH-Modules/PH/Exercise/Exercise_print.html" target="_blank">Benefits of Exercise</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.healthline.com/nutrition/11-proven-benefits-of-ginger">11 Proven Health Benefits of Ginger</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://ods.od.nih.gov/factsheets/vitaminb12-consumer/">Vitamin B-12</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.healthline.com/nutrition/top-10-evidence-based-health-benefits-of-turmeric">10 Proven Health Benefits of Turmeric and Curcumin</a></td>
+                </tr>
+            </table>
+        </main>
+
+        <!--header will be the same from page to page-->
+        <footer>
+            Made by James Pham &TRADE; <br>
+            <!--Link that takes you back to the top of the same page-->
+            <a href="#top" style="font-size: 12px">Back to the Top</a>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Information and graphs about exercise and its impact on health">
+        <meta name="keywords" content="fitness, health, athletics, heart disease, osteoporosis, depression"> <!--meta for each page is different, depending on which topic I am trying to attract users to-->
+        <title>Athletic Health Kiosk</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <style>
+            /*****Individual Styling Per Page Done Here*****/
+            /*background image*/
+            body{
+                background: url("https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?cs=srgb&dl=adult-athlete-black-and-white-163403.jpg&fm=jpg");
+                background-repeat: no-repeat;
+                background-size:cover; /*dynamic sizing, will always cover the entire page. Also stays within ratio*/
+            }
+
+            /*Extra vertical space since this page is larger than others*/
+            .main-body{
+                height: 200%;
+            }
+            
+            /*frame for images*/
+            img{
+                border: 2px solid grey;
+                border-style: outset;
+                box-shadow: 5px -5px grey; /*casts a shadow behind each image*/
+            }
+
+            /*reduce the font size of captions for graphs*/
+            figcaption{
+                font-size: 12px;
+            }
+
+            @media only screen and (max-width: 1300px){
+            /*responsive effects just for this page*/
+                img{
+                    /*scales down the image for screens 950 px and under*/
+                    width:50vw;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--header will be the same from page to page-->
+        <header id="top"> <!--top id to anchor link in footer to top-->
+            <h1 id="title">
+                Health and Wellness Kiosk
+            </h1>
+
+            <!--navigation bar:
+            This will lead visitors to other sections of my page.-->
+            <div class="nav-bar">
+                <nav>
+                    <a href="index.html">Home</a> &nbsp;
+                    <a href="performance.html">Exercise</a> &nbsp;
+                    <a href="nutrients.html">Nutrition and Supplements</a> &nbsp;
+                    <a href="store.html">Store</a> &nbsp;
+                    <a href="resources.html">Resources</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--This will be the main difference between pages-->
+        <main class="main-body">
+            <h2 class="article-title">Exercise</h2>
+            <article>
+                <h3>Overview</h3>
+                <p>
+                    The one prescription that we tend to neglect is exercise. Exercise 
+                    is key to longevity, because it supports and maintains many of our physiological needs.
+                    Exercise helps prevent a myriad of diseases including the number one killer in the United States, heart 
+                    disease. By subscribing to a consistent exercise routine, we can avoid early mortality 
+                    or even a heavy price tag associated with healthcare.
+                </p>
+            </article>
+
+            <!--divided containers in sub-sections for easier organizationa and styling through css-->
+            <div class="sub-section">
+                <h3 class="sub-title">Prevention and Reduction Heart Disease</h3>
+                <figure>
+                    <!--In this page, I linked images to absolute url of the image, so that users can view it outside of this page
+                        when images are rescaled too small-->
+                    <a href="http://circ.ahajournals.org/content/circulationaha/107/1/e2/F1.medium.gif">
+                        <img src="http://circ.ahajournals.org/content/circulationaha/107/1/e2/F1.medium.gif" alt="A Bar Graph of Exercise and Relative Risk of Death">
+                    </a>
+                    <figcaption style="max-width: 460px;"><!--for each figure, I individually set the width caption so it doesn't spill out past the image.-->
+                        This bar graph demonstrates the relative risk for of death of each fitness category where 1 represents least fit and 5 
+                        represents most fit. <i>Graph provided by <a href="http://circ.ahajournals.org/content/107/1/e2">American Heart Assocication</a></i>
+                    </figcaption>
+                </figure>
+                <p>
+                    Physical activity is perhaps one of the best preventative solutions to heart disease. General benefits that adults experience with consistent exercise
+                    is reduced body fat, reduced blood pressure, reduced low-density lipoprotein (LDL, or better known as bad cholesterol), increased high-density
+                    lipoprotein (HDL or good cholesterol), and increased insulin sensitivity. Overall, exercise is good for general health and preventing early mortality as 
+                    exemplified by the graph above.
+                </p>
+            </div>
+
+            <div class="sub-section">
+                <h3 class="sub-title">Osteoporosis Prevention</h3>
+                <figure>
+                    <a href="https://medlineplus.gov/magazine/issues/winter11/images/timeline.jpg">
+                        <img src="https://medlineplus.gov/magazine/issues/winter11/images/timeline.jpg" alt="A graph illustrating bone density with and without treatment">
+                    </a>
+                    <figcaption style="max-width: 725px;"><!--for each figure, I individually set the width caption so it doesn't spill out past the image.-->
+                        The following graph shows how bone density dramatically decreases after a critical point in life. This can be prevented with an exercise program.
+                        <i>Illustration provided by <a href="https://medlineplus.gov/magazine/issues/winter11/images/timeline.jpg">National Institute of Health</a></i>
+                    </figcaption>
+                </figure>
+                <p>
+                    As we age, our bone density begins to deteriorate and cause osteoporosis, especially in women post menopause. Exercise, particularly resistance training,
+                    helps increasing bone density. As a first line of defense, many of us should consider exercise the primary solution.
+                </p>
+            </div>
+
+            <div class="sub-section">
+                <h3 class="sub-title">Alternative Therapy Depression</h3>
+                <figure>
+                    <a href="http://sphweb.bumc.bu.edu/otlt/MPH-Modules/PH/Exercise/exercise-depression.png">
+                        <img src="http://sphweb.bumc.bu.edu/otlt/MPH-Modules/PH/Exercise/exercise-depression.png" alt="A bar graph of patients treating depression 
+                        through exercise, medication, and a combination">
+                    </a>
+                    <figcaption style="max-width: 300px;"><!--for each figure, I individually set the width caption so it doesn't spill out past the image.-->
+                        This study shows patients who were given exercise, medication, and a combination of the two to treat depression. Exercise alone shows the highest 
+                        recovery rate with the lowest relapse rate. <i>Graph provided by <a href="http://sphweb.bumc.bu.edu/otlt/MPH-Modules/PH/Exercise/Exercise_print.html">Boston University</a></i> 
+                    </figcaption>
+                </figure>
+                <p>
+                    One of the best tools for fighting depression is exercise! 1 out of 10 Americans suffer an episode of depression anually, and a lot of Americans
+                    are guided to a pharmaceutical approach for treatment. As shown in the graph above, exercise appears to be a better solution to depression than the often prescribed
+                    antidepressants. No one should rule any type of treatments of course, but maybe we should start putting more emphasis on exercise as a viable alternative to
+                    the conventional pharmacological approach.
+                </p>
+            </div>
+        </main>
+
+        <!--header will be the same from page to page-->
+        <footer>
+            Made by James Pham &TRADE; <br>
+            <!--Link that takes you back to the top of the same page-->
+            <a href="#top" style="font-size: 12px">Back to the Top</a>
+        </footer>
+
+    </body>
+</html>

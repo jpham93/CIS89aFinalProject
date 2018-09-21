@@ -1,0 +1,104 @@
+<!--
+    Project Rubric to keep in mind:
+
+    CSS - attributes, application, code formatting (check)
+    head, body, meta, title, comments (check)
+    text, links - font, size, color (check)
+    images - alt    (check)
+    media - display, play (check)
+    lists, table (check)
+    form (check, used in the form of email submission)
+    excellence - design, usability, originality (left for users to judge)
+
+    Note:
+    I used a lot of different classes and id's in anticpation of formatting. However,
+    a lot of them ended up unused, but regardless, I retained them as a way to show how
+    I was dividing up my content.
+
+    My main focus, after ensuring that I included all basic concepts from this course, was
+    to have the best responsive design to my ability. This had some concepts beyond the 
+    regular course material, but I hope that it does not intefere with the general content of
+    my project. Enjoy!
+
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Informational fitness, health, and diet web kiosk">       <!--meta for each page is different, depending on which topic I am trying to attract users to-->
+        <meta name="keywords" content="fitness, health, athletics, diet, nutrition, supplements"> 
+        <title>Athletic Health Kiosk</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <style>
+            /*****Individual Styling Per Page Done Here*****/
+            /*background image*/
+            body{
+                background: url("https://i.pinimg.com/originals/59/da/62/59da6268eef9e6947b255fbb3adb164f.jpg");
+                background-repeat: no-repeat;
+                background-size:cover; /*dynamic sizing, will always cover the entire page. Also stays within ratio*/
+            }
+            
+            /*the content for this page will be line towards the top of the main body*/
+            .main-body{
+                justify-content: flex-start;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--header will be the same from page to page-->
+        <header id="top"> <!--top id to anchor link in footer to top-->
+            <h1 id="title">
+                Health and Wellness Kiosk
+            </h1>
+
+            <!--navigation bar:
+            This will lead visitors to other sections of my page.-->
+            <div class="nav-bar">
+                <nav>
+                    <a href="index.html">Home</a> &nbsp;
+                    <a href="performance.html">Exercise</a> &nbsp;
+                    <a href="nutrients.html">Nutrition and Supplements</a> &nbsp;
+                    <a href="store.html">Store</a> &nbsp;
+                    <a href="resources.html">Resources</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--This will be the main difference between pages-->
+        <main class="main-body">
+            <h2 class="article-title">Home Page</h2>
+            <!--Article is for better semantic meaning. This can be read as a standalone-->
+            <article>
+                <h3>Welcome!</h3>
+                <p>
+                   We are promoters of health and wellness for people of all ages. Our goal is to provide you with a wealth of information on exercise,
+                   diet, and supplements so that you can choose your own path to a healthy lifestyle. We believe that everyone has their own individual
+                   approach to exercise and diet, so let us guide you, and then, you can make your own decisions on what works best!
+                </p>
+                <p>
+                    Our website has sections that discuss the benefits of exercise and diet separately. Each individual aspect is explained in depth
+                    followed by examples. Check it out!
+                </p>
+            </article>
+            <!--aside, not nececssary but lets reader know on the side to check out our store-->
+            <aside>
+                <p>
+                    Please support us by visiting our newly launched online <a href="store.html" style="color: rgb(50, 132, 255);">store</a>.
+                </p>
+            </aside>
+        </main>
+
+        <!--header will be the same from page to page-->
+        <footer>
+            Made by James Pham &TRADE; <br>
+            <!--Link that takes you back to the top of the same page-->
+            <a href="#top" style="font-size: 12px">Back to the Top</a>
+        </footer>
+
+    </body>
+</html>
